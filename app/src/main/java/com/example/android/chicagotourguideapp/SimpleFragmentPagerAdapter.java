@@ -5,6 +5,7 @@ import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 
 public class SimpleFragmentPagerAdapter extends FragmentPagerAdapter {
+    private String tabTitles[] = new String[] { "Tab1", "Tab2", "Tab3", "tab4" };
 
     public SimpleFragmentPagerAdapter(FragmentManager fm){
         super(fm);
@@ -22,6 +23,16 @@ public class SimpleFragmentPagerAdapter extends FragmentPagerAdapter {
             return new MuseumFragment();
         }
     }
+
+    @Override
+    public CharSequence getPageTitle(int position){
+        return tabTitles[position];
+    }
+
+//    @Override
+//    public Fragment getItem(int position){
+//        return ActivitiesFragment.newInstance(position + 1);
+//    }
 
     @Override
     public int getCount()
