@@ -1,6 +1,10 @@
 <resources>
-    <string name="app_name">ChicagoTourGuideApp</string>
+    <string name="app_name">Chicago Tour Guide App</string>
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="museum_fragment">Museum Fragment</string>
+    <string name="sights_fragment">Sights Fragment</string>
+    <string name="food_fragment">Food Fragment</string>
+    <string name="activities_fragment">Activities Fragment</string>
 </resources>

@@ -11,10 +11,10 @@ import android.widget.TextView;
 /**
  * A simple {@link Fragment} subclass.
  */
-public class ViewFragment extends Fragment {
+public class SightsFragment extends Fragment {
 
 
-    public ViewFragment() {
+    public SightsFragment() {
         // Required empty public constructor
     }
 
@@ -23,7 +23,7 @@ public class ViewFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         TextView textView = new TextView(getActivity());
-        textView.setText(R.string.hello_blank_fragment);
+        textView.setText(R.string.sights_fragment);
         return textView;
     }
 
