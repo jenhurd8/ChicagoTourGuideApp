@@ -1,6 +1,6 @@
 package com.example.android.chicagotourguideapp;
 
-public class eventObject {
+public class EventObject {
 
     /***single event name, location and image reference ***/
     private String name;
@@ -8,7 +8,7 @@ public class eventObject {
     private String imageId;
 
     /**single event object constructor***/
-    public eventObject(String name, String location, String imageId){
+    public EventObject(String name, String location, String imageId){
         this.name  = name;
         this.location = location;
         this.imageId = imageId;
