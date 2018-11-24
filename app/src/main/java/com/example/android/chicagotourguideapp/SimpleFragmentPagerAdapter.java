@@ -9,8 +9,7 @@ public class SimpleFragmentPagerAdapter extends FragmentPagerAdapter {
     final int PAGE_COUNT = 4;
     private Context context;
 
-    private String tabTitles[] = new String[] { "ACTIVITIES", "FOOD", "SIGHTS",
-            //"MUSEUMS"
+    private String tabTitles[] = new String[] { "ACTIVITIES", "FOOD", "SIGHTS", "MUSEUMS"
 //            context.getString(R.string.activities),
 //            context.getString(R.string.food),
 //            context.getString(R.string.sights),
