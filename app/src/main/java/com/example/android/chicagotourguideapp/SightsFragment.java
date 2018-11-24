@@ -12,18 +12,29 @@ import android.widget.TextView;
  * A simple {@link Fragment} subclass.
  */
 public class SightsFragment extends Fragment {
+    public static final String ARG_PAGE = "ARG_PAGE";
 
+    private int mPage;
 
-    public SightsFragment() {
-        // Required empty public constructor
+    public static SightsFragment newInstance(int page) {
+        Bundle args = new Bundle();
+        args.putInt(ARG_PAGE, page);
+        SightsFragment fragment = new SightsFragment();
+        fragment.setArguments(args);
+        return fragment;
     }
 
+    @Override
+    public void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        mPage = getArguments().getInt(ARG_PAGE);
+    }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         TextView textView = new TextView(getActivity());
-        textView.setText(R.string.sights_fragment);
+        textView.setText(R.string.sights);
         return textView;
     }
 

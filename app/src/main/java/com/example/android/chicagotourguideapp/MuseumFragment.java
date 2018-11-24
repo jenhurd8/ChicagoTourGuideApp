@@ -12,18 +12,29 @@ import android.widget.TextView;
  * A simple {@link Fragment} subclass.
  */
 public class MuseumFragment extends Fragment {
+    public static final String ARG_PAGE = "ARG_PAGE";
 
+    private int mPage;
 
-    public MuseumFragment() {
-        // Required empty public constructor
+    public static MuseumFragment newInstance(int page) {
+        Bundle args = new Bundle();
+        args.putInt(ARG_PAGE, page);
+        MuseumFragment fragment = new MuseumFragment();
+        fragment.setArguments(args);
+        return fragment;
     }
 
+    @Override
+    public void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        mPage = getArguments().getInt(ARG_PAGE);
+    }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         TextView textView = new TextView(getActivity());
-        textView.setText(R.string.museum_fragment);
+        textView.setText(R.string.museum);
         return textView;
     }
 
