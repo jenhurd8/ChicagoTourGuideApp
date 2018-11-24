@@ -9,13 +9,6 @@ public class SimpleFragmentPagerAdapter extends FragmentPagerAdapter {
     final int PAGE_COUNT = 4;
     private Context context;
 
-    private String tabTitles[] = new String[] { "ACTIVITIES", "FOOD", "SIGHTS", "MUSEUMS"
-//            context.getString(R.string.activities),
-//            context.getString(R.string.food),
-//            context.getString(R.string.sights),
-    //        context.getString(R.string.sights),
-            };
-
     public SimpleFragmentPagerAdapter(FragmentManager fm, Context context){
         super(fm);
         this.context = context;
@@ -36,12 +29,22 @@ public class SimpleFragmentPagerAdapter extends FragmentPagerAdapter {
 
     @Override
     public CharSequence getPageTitle(int position){
-        return tabTitles[position];
+        switch (position) {
+            case 0:
+                return context.getString(R.string.activities);
+            case 1:
+                return context.getString(R.string.food);
+            case 2:
+                return context.getString(R.string.sights);
+            case 3:
+                return context.getString(R.string.museum);
+        }
+        return null;
     }
 
     @Override
     public int getCount()
     {
-        return 4;
+        return PAGE_COUNT;
     }
 }
