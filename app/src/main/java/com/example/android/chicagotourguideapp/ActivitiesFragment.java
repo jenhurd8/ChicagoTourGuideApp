@@ -12,10 +12,22 @@ import android.widget.TextView;
  * A simple {@link Fragment} subclass.
  */
 public class ActivitiesFragment extends Fragment {
+    public static final String ARG_PAGE = "ARG_PAGE";
 
+    private int mPage;
 
-    public ActivitiesFragment() {
-        // Required empty public constructor
+    public static ActivitiesFragment newInstance(int page) {
+        Bundle args = new Bundle();
+        args.putInt(ARG_PAGE, page);
+        ActivitiesFragment fragment = new ActivitiesFragment();
+        fragment.setArguments(args);
+        return fragment;
+    }
+
+    @Override
+    public void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        mPage = getArguments().getInt(ARG_PAGE);
     }
 
 
