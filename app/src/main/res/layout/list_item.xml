@@ -27,4 +27,14 @@
         android:paddingRight="10dp"
         tools:text="test date" />
 
+    <TextView
+        android:id="@+id/textView_imageId"
+        android:layout_width="175dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView_location"
+        android:layout_alignStart="@+id/textView_location"
+        android:layout_below="@+id/textView_location"
+        android:paddingRight="10dp"
+        tools:text="test date" />
+
 </RelativeLayout>
