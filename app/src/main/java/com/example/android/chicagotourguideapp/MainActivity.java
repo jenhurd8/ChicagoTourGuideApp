@@ -22,6 +22,13 @@ public class MainActivity extends AppCompatActivity {
         TabLayout tabLayout = (TabLayout) findViewById(R.id.sliding_tabs);
         tabLayout.setupWithViewPager(viewPager);
 
+        // Iterate over all tabs and set the custom view
+//        for (int i = 0; i < tabLayout.getTabCount(); i++) {
+//            TabLayout.Tab tab = tabLayout.getTabAt(i);
+//            tab.setCustomView(SimpleFragmentPagerAdapter.getItem(i));
+//        }
+//    }
+
 //        SimpleFragmentPagerAdapter adapter = new SimpleFragmentPagerAdapter(getSupportFragmentManager());
 //
 //        viewPager.setAdapter(adapter);
