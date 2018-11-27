@@ -47,11 +47,11 @@ public class ActivitiesFragment extends Fragment {
         View rootView = inflater.inflate(R.layout.fragment_page, container, false);
 
         ArrayList<EventObject> events = new ArrayList<EventObject>();
-        events.add(new EventObject("Field Museum of Natural History", "1400 S Lake Shore Dr\nChicago, IL 60605\n(312) 922-9410", R.drawable.field_museum));
-        events.add(new EventObject("Art Institute of Chicago", "111 S Michigan Ave\nChicago, IL 60603\n(312) 443-3600", R.drawable.art_institute));
-        events.add(new EventObject("Museum of Science and Industry", "5700 S Lake Shore Dr\nChicago, IL 60637\n(773) 684-1414", R.drawable.museum_science_industry));
-        events.add(new EventObject("Shedd Aquarium", "1200 S Lake Shore Dr\nChicago, IL 60605\n(312) 939-2438", R.drawable.shedd_aquarium));
-        events.add(new EventObject("Adler Planetarium", "1300 S Lake Shore Dr\nChicago, IL 60605\n(312) 922-7827", R.drawable.adler_planetarium));
+        events.add(new EventObject("Lincoln Park Zoo", "2001 N Clark St\nChicago, IL 60614\n(312) 742-2000", R.drawable.field_museum));
+        events.add(new EventObject("North Avenue Beach", "1600 N Lake Shore Dr\nChicago, IL 60613\n(773) 363-2223", R.drawable.art_institute));
+        events.add(new EventObject("Maggie Daley Park", "337 E Randolph St\nChicago, IL 60601\n(312) 552-3000", R.drawable.museum_science_industry));
+        events.add(new EventObject("Chicago's First Lady Cruises", "112 E Upper Wacker Dr\nChicago, IL 60601\n(847) 358-1330", R.drawable.shedd_aquarium));
+        events.add(new EventObject("Bobby's Bike Hike", "540 N Lake Shore Dr\nChicago, IL 60611\n(312) 245-9300", R.drawable.adler_planetarium));
 
         EventAdapter adapter = new EventAdapter(getActivity(), events );
 
