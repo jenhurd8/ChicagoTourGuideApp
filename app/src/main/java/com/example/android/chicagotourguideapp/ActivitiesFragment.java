@@ -47,14 +47,11 @@ public class ActivitiesFragment extends Fragment {
         View rootView = inflater.inflate(R.layout.fragment_page, container, false);
 
         ArrayList<EventObject> events = new ArrayList<EventObject>();
-        events.add(new EventObject("Field Museum of Natural History", "1400 S Lake Shore Dr\nChicago, IL 60605\n(312) 922-9410", R.drawable.the_bean));
-        events.add(new EventObject("Art Institute of Chicago", "111 S Michigan Ave\nChicago, IL 60603\n(312) 443-3600", R.drawable.the_bean));
-        events.add(new EventObject("Museum of Science and Industry", "5700 S Lake Shore Dr\nChicago, IL 60637\n(773) 684-1414", R.drawable.the_bean));
-        events.add(new EventObject("Shedd Aquarium", "1200 S Lake Shore Dr\nChicago, IL 60605\n(312) 939-2438", R.drawable.the_bean));
-        events.add(new EventObject("Adler Planetarium", "1300 S Lake Shore Dr\nChicago, IL 60605\n(312) 922-7827", R.drawable.the_bean));
-        events.add(new EventObject("How do you build a database?", "October 15, 2018", R.drawable.the_bean));
-        events.add(new EventObject("From musician to developer", "September 24, 2018", R.drawable.the_bean));
-        events.add(new EventObject("What's an Indie Hacker?", "September 17, 2018", R.drawable.the_bean));
+        events.add(new EventObject("Field Museum of Natural History", "1400 S Lake Shore Dr\nChicago, IL 60605\n(312) 922-9410", R.drawable.field_museum));
+        events.add(new EventObject("Art Institute of Chicago", "111 S Michigan Ave\nChicago, IL 60603\n(312) 443-3600", R.drawable.art_institute));
+        events.add(new EventObject("Museum of Science and Industry", "5700 S Lake Shore Dr\nChicago, IL 60637\n(773) 684-1414", R.drawable.museum_science_industry));
+        events.add(new EventObject("Shedd Aquarium", "1200 S Lake Shore Dr\nChicago, IL 60605\n(312) 939-2438", R.drawable.shedd_aquarium));
+        events.add(new EventObject("Adler Planetarium", "1300 S Lake Shore Dr\nChicago, IL 60605\n(312) 922-7827", R.drawable.adler_planetarium));
 
         EventAdapter adapter = new EventAdapter(getActivity(), events );
 
