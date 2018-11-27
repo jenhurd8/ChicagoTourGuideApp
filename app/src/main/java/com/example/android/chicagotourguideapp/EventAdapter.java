@@ -5,6 +5,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
@@ -31,8 +32,14 @@ public class EventAdapter extends ArrayAdapter<EventObject> {
 
         EventObject currentEventObject = getItem(position);
 
-        TextView eventTextView = (TextView) listItemView.findViewById(R.id.textView_title);
-        eventTextView.setText(currentEventObject.getName());
+        TextView eventTitleView = (TextView) listItemView.findViewById(R.id.textView_title);
+        eventTitleView.setText(currentEventObject.getName());
+
+        TextView eventLocationView = (TextView) listItemView.findViewById(R.id.textView_location);
+        eventLocationView.setText(currentEventObject.getLocation());
+
+        ImageView eventImageView = (ImageView) listItemView.findViewById(R.id.textView_imageId);
+        eventImageView.setImageResource(currentEventObject.getImageId());
 
         return listItemView;
     }

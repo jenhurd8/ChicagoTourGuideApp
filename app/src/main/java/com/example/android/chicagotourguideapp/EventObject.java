@@ -7,7 +7,7 @@ public class EventObject {
     /***single event name, location and image reference ***/
     private String mName;
     private String mLocation;
-    private String mImageId;
+    private int mImageId;
 
     /**single event object constructor***/
 //    public EventObject(ArrayList Event){
@@ -16,7 +16,7 @@ public class EventObject {
 //        this.imageId = imageId;
 //    }
 
-    public EventObject(String name, String location, String imageId){
+    public EventObject(String name, String location, int imageId){
         this.mName  = name;
         this.mLocation = location;
         this.mImageId = imageId;
@@ -30,7 +30,7 @@ public class EventObject {
     public String getLocation(){
         return mLocation;
     }
-    public String getImageId(){
+    public int getImageId(){
         return mImageId;
     }
 }
