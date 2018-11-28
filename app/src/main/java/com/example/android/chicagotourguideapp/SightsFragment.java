@@ -40,7 +40,7 @@ public class SightsFragment extends Fragment {
         View rootView = inflater.inflate(R.layout.fragment_page, container, false);
 
         ArrayList<EventObject> events = new ArrayList<EventObject>();
-        events.add(new EventObject("Navy Pier", " 600 E Grand Ave\nChicago, IL 60611\n(312) 595-7437", R.drawable.field_museum));
+        events.add(new EventObject("Navy Pier", "600 E Grand Ave\nChicago, IL 60611\n(312) 595-7437", R.drawable.field_museum));
         events.add(new EventObject("The Bean (Cloud Gate)", "201 E Randolph S\nChicago, IL 60602\n(312) 742-1168", R.drawable.art_institute));
         events.add(new EventObject("Buckingham Fountain", "301 S Columbus Dr\nChicago, IL 60605\n(312) 742-7529", R.drawable.museum_science_industry));
         events.add(new EventObject("Skydeck Chicago", "233 S Wacker Dr\nChicago, IL 60606\n(312) 875-9696", R.drawable.shedd_aquarium));
