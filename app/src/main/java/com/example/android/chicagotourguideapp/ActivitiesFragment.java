@@ -22,7 +22,6 @@ public class ActivitiesFragment extends Fragment {
         // Required empty public constructor
     }
 
-
     public static ActivitiesFragment newInstance(int page) {
         Bundle args = new Bundle();
         args.putInt(ARG_PAGE, page);
@@ -30,19 +29,10 @@ public class ActivitiesFragment extends Fragment {
         fragment.setArguments(args);
         return fragment;
     }
-//
-//    @Override
-//    public void onCreate(Bundle savedInstanceState) {
-//        super.onCreate(savedInstanceState);
-//        mPage = getArguments().getInt(ARG_PAGE);
-//    }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-//        TextView textView = new TextView(getActivity());
-//        textView.setText(R.string.activities);
-//        return textView;
 
         View rootView = inflater.inflate(R.layout.fragment_page, container, false);
 
@@ -53,13 +43,12 @@ public class ActivitiesFragment extends Fragment {
         events.add(new EventObject("Chicago's First Lady Cruises", "112 E Upper Wacker Dr\nChicago, IL 60601\n(847) 358-1330", R.drawable.cruise));
         events.add(new EventObject("Bobby's Bike Hike", "540 N Lake Shore Dr\nChicago, IL 60611\n(312) 245-9300", R.drawable.bobby_s_historic_neighborhoods));
 
-        EventAdapter adapter = new EventAdapter(getActivity(), events );
+        EventAdapter adapter = new EventAdapter(getActivity(), events);
 
         ListView listView = rootView.findViewById(R.id.list);
 
         listView.setAdapter(adapter);
 
-        //return inflater.inflate(R.layout.fragment_page, container, false);
         return rootView;
     }
 

@@ -17,16 +17,16 @@ public class EventAdapter extends ArrayAdapter<EventObject> {
     final int PAGE_COUNT = 4;
     private Context mContext;
 
-    public EventAdapter(Context context, ArrayList<EventObject> events){
+    public EventAdapter(Context context, ArrayList<EventObject> events) {
         super(context, 0, events);
         mContext = context;
     }
 
 
     @Override
-    public View getView(int position, View convertView, ViewGroup parent){
+    public View getView(int position, View convertView, ViewGroup parent) {
         View listItemView = convertView;
-        if(listItemView == null){
+        if (listItemView == null) {
             listItemView = LayoutInflater.from(getContext()).inflate(R.layout.list_item, parent, false);
         }
 

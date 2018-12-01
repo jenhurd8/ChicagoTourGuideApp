@@ -27,12 +27,6 @@ public class FoodFragment extends Fragment {
         return fragment;
     }
 
-//    @Override
-//    public void onCreate(Bundle savedInstanceState) {
-//        super.onCreate(savedInstanceState);
-//        mPage = getArguments().getInt(ARG_PAGE);
-//    }
-
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
@@ -40,13 +34,13 @@ public class FoodFragment extends Fragment {
         View rootView = inflater.inflate(R.layout.fragment_page, container, false);
 
         ArrayList<EventObject> events = new ArrayList<EventObject>();
-        events.add(new EventObject("Giordano's Pizza", "130 E Randolph St\nChicago, IL 60601\n(312) 616-1200", R.drawable.field_museum));
-        events.add(new EventObject("Portillo's Hot Dogs", "100 W Ontario St\nChicago, IL 60654\n(312) 587-8910", R.drawable.art_institute));
-        events.add(new EventObject("Garrett Popcorn Shops", "625 Michigan Avenue\nChicago, IL 60611\n(888) 476-7267", R.drawable.museum_science_industry));
-        events.add(new EventObject("Al's Beef", "69 W Ontario St\nChicago, IL 60654\n(312) 943-3222", R.drawable.shedd_aquarium));
-        events.add(new EventObject("Harry Caray's Italian Steakhouse", "33 W Kinzie St\nChicago, IL 60654\n(312) 828-0966", R.drawable.adler_planetarium));
+        events.add(new EventObject("Giordano's Pizza", "130 E Randolph St\nChicago, IL 60601\n(312) 616-1200", R.drawable.pizza));
+        events.add(new EventObject("Portillo's Hot Dogs", "100 W Ontario St\nChicago, IL 60654\n(312) 587-8910", R.drawable.portillos));
+        events.add(new EventObject("Garrett Popcorn Shops", "625 Michigan Avenue\nChicago, IL 60611\n(888) 476-7267", R.drawable.garrett));
+        events.add(new EventObject("Al's Beef", "69 W Ontario St\nChicago, IL 60654\n(312) 943-3222", R.drawable.alsbeef));
+        events.add(new EventObject("Harry Caray's Italian Steakhouse", "33 W Kinzie St\nChicago, IL 60654\n(312) 828-0966", R.drawable.harry_steakhouse));
 
-        EventAdapter adapter = new EventAdapter(getActivity(), events );
+        EventAdapter adapter = new EventAdapter(getActivity(), events);
 
         ListView listView = rootView.findViewById(R.id.list);
 
