@@ -1,6 +1,8 @@
 package com.example.android.chicagotourguideapp;
 
 
+import android.content.Context;
+import android.content.res.Resources;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
@@ -15,7 +17,7 @@ import java.util.ArrayList;
  * A simple {@link Fragment} subclass.
  */
 public class FoodFragment extends Fragment {
-    public static final String ARG_PAGE = "ARG_PAGE";
+    public static final String ARG_PAGE = Resources.getSystem().getString(R.string.arg_page);
 
     private int mPage;
 
@@ -34,11 +36,11 @@ public class FoodFragment extends Fragment {
         View rootView = inflater.inflate(R.layout.fragment_page, container, false);
 
         ArrayList<EventObject> events = new ArrayList<EventObject>();
-        events.add(new EventObject("Giordano's Pizza", "130 E Randolph St\nChicago, IL 60601\n(312) 616-1200", R.drawable.pizza));
-        events.add(new EventObject("Portillo's Hot Dogs", "100 W Ontario St\nChicago, IL 60654\n(312) 587-8910", R.drawable.portillos));
-        events.add(new EventObject("Garrett Popcorn Shops", "625 Michigan Avenue\nChicago, IL 60611\n(888) 476-7267", R.drawable.garrett));
-        events.add(new EventObject("Al's Beef", "69 W Ontario St\nChicago, IL 60654\n(312) 943-3222", R.drawable.alsbeef));
-        events.add(new EventObject("Harry Caray's Italian Steakhouse", "33 W Kinzie St\nChicago, IL 60654\n(312) 828-0966", R.drawable.harry_steakhouse));
+        events.add(new EventObject(getResources().getString(R.string.giordanos_pizza), getString(R.string.giordano_address), R.drawable.pizza));
+        events.add(new EventObject(getResources().getString(R.string.portillos), getString(R.string.portillo_address), R.drawable.portillos));
+        events.add(new EventObject(getString(R.string.garrett), getString(R.string.garrett_address), R.drawable.garrett));
+        events.add(new EventObject(getString(R.string.als), getString(R.string.als_address), R.drawable.alsbeef));
+        events.add(new EventObject(getString(R.string.harry_caray), getString(R.string.harry_address), R.drawable.harry_steakhouse));
 
         EventAdapter adapter = new EventAdapter(getActivity(), events);
 

@@ -1,6 +1,7 @@
 package com.example.android.chicagotourguideapp;
 
 
+import android.content.res.Resources;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
@@ -15,7 +16,7 @@ import java.util.ArrayList;
  * A simple {@link Fragment} subclass.
  */
 public class MuseumFragment extends Fragment {
-    public static final String ARG_PAGE = "ARG_PAGE";
+    public static final String ARG_PAGE = Resources.getSystem().getString(R.string.arg_page);
 
     private int mPage;
 
@@ -34,11 +35,11 @@ public class MuseumFragment extends Fragment {
         View rootView = inflater.inflate(R.layout.fragment_page, container, false);
 
         ArrayList<EventObject> events = new ArrayList<EventObject>();
-        events.add(new EventObject("Field Museum of Natural History", "1400 S Lake Shore Dr\nChicago, IL 60605\n(312) 922-9410", R.drawable.field_museum));
-        events.add(new EventObject("Art Institute of Chicago", "111 S Michigan Ave\nChicago, IL 60603\n(312) 443-3600", R.drawable.art_institute));
-        events.add(new EventObject("Museum of Science and Industry", "5700 S Lake Shore Dr\nChicago, IL 60637\n(773) 684-1414", R.drawable.museum_science_industry));
-        events.add(new EventObject("Shedd Aquarium", "1200 S Lake Shore Dr\nChicago, IL 60605\n(312) 939-2438", R.drawable.shedd_aquarium));
-        events.add(new EventObject("Adler Planetarium", "1300 S Lake Shore Dr\nChicago, IL 60605\n(312) 922-7827", R.drawable.adler_planetarium));
+        events.add(new EventObject(getString(R.string.field_museum), getString(R.string.field_museum_address), R.drawable.field_museum));
+        events.add(new EventObject(getString(R.string.art_institute), getString(R.string.art_institute_address), R.drawable.art_institute));
+        events.add(new EventObject(getString(R.string.museum_science), getString(R.string.museum_science_address), R.drawable.museum_science_industry));
+        events.add(new EventObject(getString(R.string.shedd_aquarium), getString(R.string.shedd_address), R.drawable.shedd_aquarium));
+        events.add(new EventObject(getString(R.string.adler_planetarium), getString(R.string.adler_address), R.drawable.adler_planetarium));
 
         EventAdapter adapter = new EventAdapter(getActivity(), events);
 

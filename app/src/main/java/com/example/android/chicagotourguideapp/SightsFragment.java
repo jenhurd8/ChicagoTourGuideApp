@@ -1,6 +1,7 @@
 package com.example.android.chicagotourguideapp;
 
 
+import android.content.res.Resources;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
@@ -15,7 +16,7 @@ import java.util.ArrayList;
  * A simple {@link Fragment} subclass.
  */
 public class SightsFragment extends Fragment {
-    public static final String ARG_PAGE = "ARG_PAGE";
+    public static final String ARG_PAGE = Resources.getSystem().getString(R.string.arg_page);
 
     private int mPage;
 
@@ -34,11 +35,11 @@ public class SightsFragment extends Fragment {
         View rootView = inflater.inflate(R.layout.fragment_page, container, false);
 
         ArrayList<EventObject> events = new ArrayList<EventObject>();
-        events.add(new EventObject("Navy Pier", "600 E Grand Ave\nChicago, IL 60611\n(312) 595-7437", R.drawable.navy_pier));
-        events.add(new EventObject("The Bean (Cloud Gate)", "201 E Randolph S\nChicago, IL 60602\n(312) 742-1168", R.drawable.the_bean));
-        events.add(new EventObject("Buckingham Fountain", "301 S Columbus Dr\nChicago, IL 60605\n(312) 742-7529", R.drawable.fountain));
-        events.add(new EventObject("Skydeck Chicago", "233 S Wacker Dr\nChicago, IL 60606\n(312) 875-9696", R.drawable.skydeck));
-        events.add(new EventObject("Chicago Riverwalk", "Chicago Riverwalk\nChicago, IL 60601\n(877) 300-6746", R.drawable.riverwalk));
+        events.add(new EventObject(getString(R.string.navy_pier), getString(R.string.navy_pier_address), R.drawable.navy_pier));
+        events.add(new EventObject(getString(R.string.bean), getString(R.string.bean_address), R.drawable.the_bean));
+        events.add(new EventObject(getString(R.string.buckingham), getString(R.string.buckingham_address), R.drawable.fountain));
+        events.add(new EventObject(getString(R.string.skydeck), getString(R.string.skydeck_address), R.drawable.skydeck));
+        events.add(new EventObject(getString(R.string.riverwalk), getString(R.string.riverwalk_address), R.drawable.riverwalk));
 
         EventAdapter adapter = new EventAdapter(getActivity(), events);
 

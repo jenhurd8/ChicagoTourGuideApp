@@ -1,9 +1,49 @@
 <resources>
     <string name="app_name">Chicago Tour Guide App</string>
-
-    <!-- TODO: Remove or change this placeholder text -->
     <string name="museum">Museums</string>
     <string name="sights">Sights</string>
     <string name="food">Food</string>
     <string name="activities">Activities</string>
+    <string name="arg_page">ARG_PAGE</string>
+    <string name="giordanos_pizza">Giordano\'s Pizza</string>
+    <string name="portillos">Portillo\'s Hot Dogs</string>
+    <string name="garrett">Garrett Popcorn Shops</string>
+    <string name="als">Al\'s Beef</string>
+    <string name="harry_caray">Harry Caray\'s Italian Steakhouse</string>
+    <string name="giordano_address">130 E Randolph St Chicago, IL 60601 (312) 616-1200</string>
+    <string name="portillo_address">100 W Ontario St Chicago, IL 60654 (312) 587-8910</string>
+    <string name="garrett_address">625 Michigan Avenue Chicago, IL 60611 (888) 476-7267</string>
+    <string name="als_address">69 W Ontario St Chicago, IL 60654 (312) 943-3222</string>
+    <string name="harry_address">33 W Kinzie St Chicago, IL 60654 (312) 828-0966</string>
+    <string name="lincoln_park_zoo">Lincoln Park Zoo</string>
+    <string name="lincoln_park_zoo_address">2001 N Clark St Chicago, IL 60614 (312) 742-2000</string>
+    <string name="north_ave_beach">North Avenue Beach</string>
+    <string name="north_ave_beach_address">1600 N Lake Shore Dr Chicago, IL 60613 (773) 363-2223</string>
+    <string name="maggie_park">Maggie Daley Park</string>
+    <string name="maggie_park_address">337 E Randolph St Chicago, IL 60601 (312) 552-3000</string>
+    <string name="chicago_first_lady_cruise">Chicago\'s First Lady Cruises</string>
+    <string name="chicago_first_lady_address">112 E Upper Wacker Dr Chicago, IL 60601 (847) 358-1330</string>
+    <string name="bobbys_bike">Bobby\'s Bike Hike</string>
+    <string name="bobbys_bike_address">540 N Lake Shore Dr Chicago, IL 60611 (312) 245-9300</string>
+    <string name="field_museum">Field Museum of Natural History</string>
+    <string name="art_institute">Art Institute of Chicago</string>
+    <string name="museum_science">Museum of Science and Industry</string>
+    <string name="shedd_aquarium">Shedd Aquarium</string>
+    <string name="adler_planetarium">Adler Planetarium</string>
+    <string name="field_museum_address">1400 S Lake Shore Dr Chicago, IL 60605 (312) 922-9410</string>
+    <string name="art_institute_address">111 S Michigan Ave Chicago, IL 60603 (312) 443-3600</string>
+    <string name="museum_science_address">5700 S Lake Shore Dr Chicago, IL 60637 (773) 684-1414</string>
+    <string name="shedd_address">1200 S Lake Shore Dr Chicago, IL 60605 (312) 939-2438</string>
+    <string name="adler_address">1300 S Lake Shore Dr Chicago, IL 60605 (312) 922-7827</string>
+    <string name="navy_pier">Navy Pier</string>
+    <string name="navy_pier_address">600 E Grand Ave Chicago, IL 60611 (312) 595-7437</string>
+    <string name="bean">The Bean (Cloud Gate)</string>
+    <string name="bean_address">201 E Randolph S Chicago, IL 60602 (312) 742-1168</string>
+    <string name="buckingham">Buckingham Fountain</string>
+    <string name="buckingham_address">301 S Columbus Dr Chicago, IL 60605 (312) 742-7529</string>
+    <string name="skydeck">Skydeck Chicago</string>
+    <string name="skydeck_address">233 S Wacker Dr Chicago, IL 60606 (312) 875-9696</string>
+    <string name="riverwalk">Chicago Riverwalk</string>
+    <string name="riverwalk_address">Chicago Riverwalk Chicago, IL 60601 (877) 300-6746</string>
+    <string name="arg_page2">ARG_PAGE</string>
 </resources>
