@@ -39,7 +39,7 @@ public class SightsFragment extends Fragment {
         events.add(new EventObject(getString(R.string.bean), getString(R.string.bean_address), R.drawable.the_bean));
         events.add(new EventObject(getString(R.string.buckingham), getString(R.string.buckingham_address), R.drawable.fountain));
         events.add(new EventObject(getString(R.string.skydeck), getString(R.string.skydeck_address), R.drawable.skydeck));
-        events.add(new EventObject(getString(R.string.riverwalk), getString(R.string.riverwalk_address), R.drawable.riverwalk));
+        events.add(new EventObject(getString(R.string.riverwalk), getString(R.string.riverwalk_address), R.drawable.skydeck));
 
         EventAdapter adapter = new EventAdapter(getActivity(), events);
 
